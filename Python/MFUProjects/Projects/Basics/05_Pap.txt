@@ -1,0 +1,53 @@
++--------------------+
+|  Programmstart     |
++---------+----------+
+          |
+          v
++--------------------+
+|  Lade Datei (wenn  |
+|  vorhanden)        |
++---------+----------+
+          |
+          v
++--------------------+
+|  Menü anzeigen     |
+|  (1-5 Auswahl)     |
++---------+----------+
+          |
+          v
++--------------------+     Nein     +------------------------+
+| Benutzerwahl?      |<------------| Weitere Aktion?         |
+| (z.B. 1 = Hinzufügen)           | (Zurück zum Menü?)       |
++---------+----------+            +-----------+--------------+
+          |                                    |
+          v                                    v
++--------------------+              +------------------------+
+| Aktion ausführen   |              | Programm beenden       |
+| (z. B. Aufgabe add)|              | und speichern          |
++---------+----------+              +------------------------+
+          |
+          v
++--------------------+
+| Speichern Datei    |
++---------+----------+
+          |
+          +----→ Zurück zum Menü
+
+
+
+1. Funktionale Anforderungen (unverändert)
+	•	Aufgaben hinzufügen
+	•	Aufgaben anzeigen
+	•	Aufgaben als erledigt markieren
+	•	Aufgaben löschen
+	•	Aufgabenliste speichern (Persistent)
+	•	Aufgabenliste laden
+	•	Konsolenmenü zur Navigation
+
+⸻
+
+2. Nicht-funktionale Anforderungen
+	•	Bedienung über die Konsole mit Textmenü (z. B. input())
+	•	Lesbares Dateiformat für die Aufgaben (z. B. JSON)
+	•	Fehlerresistente Eingabebehandlung (try-except, Eingabevalidierung)
+	•	Logik sollte in Funktionen oder Klassen gekapselt werden (→ bessere Wartbarkeit)
